@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">iLost</string>
+<<<<<<< HEAD
+    <string name="Home_text">Home</string>
+    <string name="Startup_text">Lorem ipsum dolor sit amet.</string>
+    <string name="Logo_description">App Logo</string>
+=======
+>>>>>>> 1b06a1da82b2d7b6bb742e9c6c762ce29e7b9dd2
 </resources>
