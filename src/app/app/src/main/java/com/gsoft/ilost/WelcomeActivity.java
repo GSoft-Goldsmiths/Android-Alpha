@@ -22,7 +22,6 @@ import android.widget.TextView;
 /**
  * TODO:
  * 1. Apply Navigation dots
- *
  */
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -37,7 +36,7 @@ public class WelcomeActivity extends AppCompatActivity {
     private SectionsPagerAdapter mSectionsPagerAdapter;
 
     /**
-     *  Total section numbers
+     * Total section numbers
      */
     private static int total_section_num = 3;
 
@@ -74,8 +73,6 @@ public class WelcomeActivity extends AppCompatActivity {
 
 
     }
-
-
 
 
     /**
@@ -130,9 +127,9 @@ public class WelcomeActivity extends AppCompatActivity {
             /**
              *  Display resgister button if it's the last page
              */
-            if (section_num == total_section_num - 1){
-                Button register_button = rootView.findViewById(R.id.register_button);
-                register_button.setVisibility(View.VISIBLE);
+            if (section_num == total_section_num - 1) {
+                Button login_button = rootView.findViewById(R.id.login_button);
+                login_button.setVisibility(View.VISIBLE);
             }
 
             return rootView;
@@ -164,10 +161,10 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     /**
-     * Handler for register button
+     * Handler for login button
      */
-    public void onRegisterButtonClick (View view) {
-        Intent intent = new Intent(this, RegisterActivity.class);
+    public void onRegisterButtonClick(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
         this.startActivity(intent);
     }
 }

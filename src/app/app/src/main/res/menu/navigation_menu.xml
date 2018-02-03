@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_item_list"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:title="@string/Item_List"></item>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:checkable="false"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/Settings">
+
+    </item>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="@string/Log_Out">
+
+    </item>
+</menu>
