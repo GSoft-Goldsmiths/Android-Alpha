@@ -20,21 +20,34 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".RegisterActivity"
-            android:label="@string/title_activity_register"
-            android:parentActivityName=".WelcomeActivity">
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.gsoft.ilost.WelcomeActivity" />
+                android:value="com.gsoft.ilost.MainActivity" />
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".InputPasswordActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gsoft.ilost.InputPasswordActivity" />
+        </activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".CreatePasswordActivity"/>
+            <activity android:name=".InputPasswordActivity"/>
     </application>
 
 </manifest>
