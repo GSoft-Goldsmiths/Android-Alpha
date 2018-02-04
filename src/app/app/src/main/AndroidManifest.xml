@@ -30,22 +30,24 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login"
-            android:parentActivityName=".WelcomeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.gsoft.ilost.WelcomeActivity" />
-        </activity>
-        <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".LoginActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.gsoft.ilost.LoginActivity" />
+                android:value="com.gsoft.ilost.MainActivity" />
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".InputPasswordActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gsoft.ilost.InputPasswordActivity" />
+        </activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".CreatePasswordActivity"/>
+            <activity android:name=".InputPasswordActivity"/>
     </application>
 
 </manifest>

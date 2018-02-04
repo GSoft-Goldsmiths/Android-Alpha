@@ -164,7 +164,7 @@ public class WelcomeActivity extends AppCompatActivity {
      * Handler for login button
      */
     public void onRegisterButtonClick(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         this.startActivity(intent);
     }
 }
