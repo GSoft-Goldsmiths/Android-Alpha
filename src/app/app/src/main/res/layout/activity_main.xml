@@ -24,12 +24,12 @@
     </LinearLayout>
 
     <android.support.design.widget.NavigationView
+        android:id="@+id/nav_menu"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu/navigation_menu">
-
-
+        app:menu="@menu/navigation_menu"
+        app:headerLayout="@layout/navigation_header">
 
     </android.support.design.widget.NavigationView>
 
