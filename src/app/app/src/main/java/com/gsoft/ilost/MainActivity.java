@@ -1,11 +1,14 @@
 package com.gsoft.ilost;
 
+import android.content.Intent;
+import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,14 +32,36 @@ public class MainActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
+        NavigationView mNavigationView = (NavigationView) findViewById(R.id.nav_menu);
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
+                    case (R.id.nav_item_list):
+                        Intent goHome = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(goHome);
+                        break;
+                    case (R.id.nav_settings):
+                        Intent goSettings = new Intent(getApplicationContext(), SettingsActivity.class);
+                        startActivity(goSettings);
+                        break;
+                    case (R.id.nav_logout):
+                        Intent goLogout = new Intent(getApplicationContext(), LoginActivity.class);
+                        startActivity(goLogout);
+                }
+                return true;
+            }
+        });
+
     }
 
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if (nToggle.onOptionsItemSelected(item)) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }
