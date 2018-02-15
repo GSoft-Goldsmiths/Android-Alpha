@@ -27,8 +27,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
+        android:scaleType="center"
         android:layout_margin="@dimen/fab_margin"
+        android:rotation="180"
         app:backgroundTint="@color/colorPrimaryBright"
-        app:srcCompat="@android:drawable/ic_menu_upload" />
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_menu_directions" />
 
 </android.support.design.widget.CoordinatorLayout>
