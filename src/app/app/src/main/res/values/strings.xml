@@ -180,4 +180,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_add">addActivity</string>
+    <string name="new_item">New item</string>
+    <string name="camera_image">camera image</string>
+    <string name="camera">Camera - Last seen: 15 mins ago</string>
+    <string name="todo">TODO</string>
+    <string name="track_it">Track it</string>
 </resources>
