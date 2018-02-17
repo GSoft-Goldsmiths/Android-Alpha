@@ -8,25 +8,57 @@
     tools:context="com.gsoft.ilost.MainActivity">
 
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="0dp"
+        <RelativeLayout
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:text="@string/main"
-            android:textAlignment="center"
-            android:textSize="24sp" />
+            android:clipToPadding="false"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_border"
+
+                android:elevation="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/myImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/camera"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/camera" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/camera"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:text="@string/track_it"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
 
 
-    </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="bottom|end"
         android:orientation="vertical"
@@ -46,6 +78,7 @@
             app:elevation="1dp"
             app:fabSize="normal"
             app:srcCompat="@android:drawable/ic_input_add" />
+
     </LinearLayout>
 
     <android.support.design.widget.NavigationView
