@@ -23,6 +23,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button btn = (Button)findViewById(R.id.track_button);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MapsActivity.class));
+            }
+        });
+
         ImageButton fabImageButton = (ImageButton) findViewById(R.id.floatingActionButton);
 
         fabImageButton.setOnClickListener(new View.OnClickListener() {

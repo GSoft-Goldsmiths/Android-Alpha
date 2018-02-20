@@ -185,4 +185,6 @@
     <string name="camera">Camera - Last seen: 15 mins ago</string>
     <string name="todo">TODO</string>
     <string name="track_it">Track it</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
 </resources>
